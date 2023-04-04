@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+  crossorigin="anonymous"
+/>
+  
+  <title>Form Validation</title>
+</head>
+<body>
+<div class="container">
+  <div class="content">
+    <div class="logo">
+      <img src="images/logo.svg" alt="">
+    </div>
+    <div class="image">
+      <!-- <img src="images/illustration.svg" alt=""> -->
+    </div>
+    <div class="text">Strat for free and <br> attractive offers today</div>
+  </div>
+  <form  id="form">
+    <div class="social">
+    <div class="title">Get Started</div>
+    <div class="question"> 
+      Already Have an Account? </br>
+      <span>Sing In</span>
+    </div>
+    <div class="btn">
+      <div class="btn-1">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+         width="34" height="34"
+         viewBox="0 0 48 48">
+         <path fill="#f5bc00" d="M43.6,20.1H42V20H24v8h11.3c-1.6,4.7-6.1,8-11.3,8c-6.6,0-12-5.4-12-12s5.4-12,12-12c3.1,0,5.8,1.2,8,3l5.7-5.7	C34,6.1,29.3,4,24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20C44,22.7,43.9,21.4,43.6,20.1z"></path><path fill="#6c19ff" d="M43.6,20.1L43.6,20.1L42,20H24v8h11.3c-0.8,2.2-2.2,4.2-4.1,5.6c0,0,0,0,0,0l6.2,5.2C37,39.2,44,34,44,24	C44,22.7,43.9,21.4,43.6,20.1z"></path><path fill="#3ddab4" d="M24,44c5.2,0,9.9-2,13.4-5.2l-6.2-5.2c-2,1.5-4.5,2.4-7.2,2.4c-5.2,0-9.6-3.3-11.3-7.9l-6.5,5	C9.5,39.6,16.2,44,24,44z"></path><path fill="#f55376" d="M6.3,14.7l6.6,4.8C14.7,15.1,19,12,24,12c3.1,0,5.8,1.2,8,3l5.7-5.7C34,6.1,29.3,4,24,4	C16.3,4,9.7,8.3,6.3,14.7z"></path><path fill="#2100c4" d="M26.6,35.7l6.8,6c1.5-0.8,2.9-1.8,4.1-2.9l-6.2-5.2C29.9,34.6,28.3,35.3,26.6,35.7z"></path><path fill="#eb0000" d="M9.2,10.6c-1.1,1.2-2.1,2.6-2.9,4.1l3.9,2.9l2.6,1.9c0.6-1.6,1.6-3,2.8-4.1L9.2,10.6z"></path>
+        </svg>
+     Sign Up
+
+      </div>
+      <div class="btn-2">
+        <img src="https://img.icons8.com/wired/34/ffffff/facebook-new.png"/>
+      Sign Up
+      </div>
+    </div>
+    <div class="or">Or</div>
+
+       </div>
+
+    <!-- /**
+        * ! user name Input here  
+    **/-->
+
+    <div>
+      <label for="username">User Name</label>
+      <i class="fas fa-user"></i>
+      <input 
+      type="text" 
+      name="username" 
+      id="username" 
+      placeholder="Neda Choobdar">
+      <i class="fas fa-exclamation-circle failure-icon"></i>
+      <i class="far fa-check-circle success-icon"></i>
+      <div class="error"></div>
+     
+    </div>
+     
+     <!-- /**
+        * ! Email Input here  
+    **/-->
+
+    <div>  
+      <label for="email">Email</label>
+      <i class="far fa-envelope"></i>
+      <input 
+      type="text" 
+      name="email" 
+      id="email" 
+      placeholder="abc@gmail.com">
+      <i class="fas fa-exclamation-circle failure-icon"></i>
+      <i class="far fa-check-circle success-icon"></i>
+      <div class="error"></div>
+    </div>
+
+     <!-- /**
+        * ! Password Input here  
+    **/-->
+
+    <div>
+      <label for="password">Password</label>
+      <i class="fas fa-lock" ></i>
+      <input 
+      type="text" 
+      name="password" 
+      id="password" 
+      placeholder="Password here">
+      <i class="fas fa-exclamation-circle failure-icon"></i>
+      <i class="far fa-check-circle success-icon"></i>
+      <div class="error"></div>
+    </div>
+ 
+    <button type="submit" id="submit">Submit</button>
+
+  </form>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
